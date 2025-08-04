@@ -1,0 +1,7 @@
+/* Hide left nav only on homepage */
+body[data-md-path="index"] .md-sidebar--primary {
+    display: none !important;
+}
+body[data-md-path="index"] .md-content {
+    margin-left: 0 !important;
+}

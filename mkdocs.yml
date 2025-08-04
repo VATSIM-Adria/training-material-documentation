@@ -1,0 +1,90 @@
+site_name: VATAdria ATD Documentation
+site_url: https://sitename.example
+
+nav:
+  - Ops Overview: index.md
+  - Airports/Positions:
+      - Overview: airports.md
+      - Beograd FIR | LYBA:
+        - LYBE (Belgrade): belgrade.md
+      - Ljubljana FIR | LJLA:
+        - LJLJ (Ljubljana): ljubljana.md
+      - Sarajevo FIR | LQSB:
+        - LGSA (Sarajevo): sarajevo.md
+      - Skopje FIR | LWSS:
+        - LWSK (Skopje): skopje.md
+      - Tirana FIR | LAAA:
+        - LATI (Tirana): tirana.md
+      - Zagreb FIR | LDZO:
+        - LDZA (Zagreb): zagreb.md
+  - Enroute:
+      - Overview: adria-overview.md
+      - ADR_W_CTR: adria-w.md
+      - ADR_E_CTR: adria-e.md
+  - Definitions: definitions.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  font:
+    text: Montserrat
+    code: Red Hat Mono
+
+  logo: assets/full logo white.png
+  favicon: assets/logoicon.png
+  features:
+    - navigation.tabs
+    - navigation.footer
+
+  palette: 
+  # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+      primary: light blue
+      accent: custom
+
+
+  # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: light blue
+      accent: custom
+
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: false
+
+extra:
+  social:
+    - icon: simple/discord
+      link: https://community.vatsim.net/
+    - icon: simple/facebook
+      link: https://www.facebook.com/VATSIMAdria/
+    - icon: simple/instagram
+      link: https://www.instagram.com/vatsimadria/
+    - icon: simple/youtube
+      link: https://www.youtube.com/channel/UC-QNronZMmWTc0vz9tj2doQ
+
+copyright: Copyright &copy; 2025 VATAdria
+
+extra_css:
+  - styles/extra.css
+  - styles/hide-nav.css
+  - styles/custom-icons.css
+
+extra_javascript:
+  - assets/color-toggle.js
+
+
+plugins:
+  - search:

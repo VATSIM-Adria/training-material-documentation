@@ -1,0 +1,17 @@
+/* Override primary and accent colors */
+:root {
+
+  --md-accent-fg-color:         #174CA1;
+}
+
+.md-header-nav {
+  background-color: var(--md-primary-fg-color);
+  /* Optional: add some padding if needed */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* If you want to adjust tab links text color for contrast */
+.md-header-nav .md-tabs__link {
+  color: var(--md-primary-contrast);
+}
