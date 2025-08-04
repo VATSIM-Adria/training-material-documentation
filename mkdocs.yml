@@ -84,7 +84,9 @@ extra_css:
 
 extra_javascript:
   - assets/color-toggle.js
+  #- assets/js/auth.js
 
 
 plugins:
-  - search:
+  - search
+  
