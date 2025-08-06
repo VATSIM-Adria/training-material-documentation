@@ -1,0 +1,40 @@
+/* Override primary and accent colors */
+:root {
+
+  --md-accent-fg-color:         #174CA1;
+}
+
+.md-header-nav {
+  background-color: var(--md-primary-fg-color);
+  /* Optional: add some padding if needed */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* If you want to adjust tab links text color for contrast */
+.md-header-nav .md-tabs__link {
+  color: var(--md-primary-contrast);
+}
+
+/* Hide the sidebar on the homepage (index.md) */
+body[data-md-page="index"] .md-sidebar {
+    display: none;
+}
+
+/* Optional: expand the main content to full width */
+body[data-md-page="index"] .md-main__inner {
+    margin-left: 0;
+}
+
+body.home .sidebar {
+    display: none;
+}
+
+/* Change color for h2 and h3 headings */
+h2 {
+  color: var(--md-primary-fg-color);
+}
+
+h3 {
+  color: var(--md-accent-fg-color);
+}

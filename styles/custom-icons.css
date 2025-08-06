@@ -1,0 +1,20 @@
+/* Base toggle icon override */
+.md-header__button.md-icon--toggle .md-icon::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Light Mode icon */
+[data-md-color-scheme="default"] .md-header__button.md-icon--toggle .md-icon::before {
+  background-image: url("/assets/light-mode.png");
+}
+
+/* Dark Mode icon */
+[data-md-color-scheme="slate"] .md-header__button.md-icon--toggle .md-icon::before {
+  background-image: url("/assets/dark-mode.png");
+}
