@@ -3,6 +3,8 @@ site_url: https://sitename.example
 
 nav:
   - Ops Overview: index.md
+  - CtrlKit:
+      - Introduction: toolkitintro.md
   - Airports/Positions:
       - Overview: airports.md
       - Beograd FIR | LYBA:
@@ -66,6 +68,8 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: simple/github
+      link: https://github.com/VATSIM-Adria/
     - icon: simple/discord
       link: https://community.vatsim.net/
     - icon: simple/facebook
