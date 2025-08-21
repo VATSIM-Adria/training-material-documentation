@@ -1,5 +1,5 @@
 site_name: VATAdria ATD Documentation
-site_url: https://sitename.example
+site_url: https://docs.vatadria.com
 
 nav:
   - Ops Overview: index.md
